@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace UniversalHomeAppliances   //DO NOT change the namespace name
+{
+    public class Program    //DO NOT change the class name
+    {
+       public static Dictionary<int, Appliance> applianceDetails = new Dictionary<int, Appliance>();
+        
+        //Implement the methods as per the description
+        
+        public static void Main(string[] args) //DO NOT change the method signature
+        {
+            applianceDetails.Add(1, new Appliance { Id = "AP01", Name = "Refrigerator", Brand = "LG",        Price = 10000 });
+            applianceDetails.Add(2, new Appliance { Id = "AP02", Name = "Dishwasher",   Brand = "Samsung",   Price = 25000 });
+            applianceDetails.Add(3, new Appliance { Id = "AP03", Name = "Oven",         Brand = "Bosch",     Price = 5000 });
+            applianceDetails.Add(4, new Appliance { Id = "AP04", Name = "Microwave",    Brand = "Whirlpool", Price = 7500 });
+            applianceDetails.Add(5, new Appliance { Id = "AP05", Name = "Toaster",      Brand = "LG",        Price = 1500 });
+            
+            //Implement code here
+        }
+    }
+}
