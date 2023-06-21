@@ -1,0 +1,119 @@
+The Dynamic Sports Academy is one of the city's well-known sports academies. They wanted to categorize the athletes based on their Athlete scores. The manager of The Dynamic Sports Academy seeks assistance from a software developer with their process. You are the software developer, and you are developing a Java program in accordance with the specifications."
+
+
+Component Specification: AthleteInfo 
+Type (Class)  :AthleteInfo
+
+Attributes 
+String athleteId 
+
+String athleteName 
+
+Date dob 
+
+String stateName 
+
+int athleteScore 
+
+Methods 
+Necessary getters, setters, and a five-argument constructor is provided as a part of the code skeleton. 
+
+
+Functional Requirement 1: Extract the details of the Athlete and create an object for AthleteInfo class. 
+Type (Class)  
+UserInterface
+
+Methods  
+public static AthleteInfo extractDetails(String athleteDetails) 
+
+Responsibilities  
+This method accepts athleteDetails separated by the colon as an argument and extracts the properties of the AthleteInfo from the argument. Set these values to the AthleteInfo object and return this object.  
+
+ 
+
+Condition: 
+
+Use date format (dd/MM/yyyy) 
+
+
+Functional Requirement 2: Categorize the athletes based on the athlete's score. 
+type (Class)  
+Methods 
+public String findAthleteCategory() 
+Responsibilities 
+This method is used to categorize the athletes' based on the athlete score. 
+
+If the athleteScore is between 0 and 50, the athlete category is Low. 
+
+If the athleteScore is between 51 and 60, the athlete category is BelowAverage. 
+
+If the athleteScore is between 61 and 70, the athlete category is Average. 
+
+If the athleteScore is between 71 and 80, the athlete category is Good. 
+
+If the athleteScore is between 81 and 100, the athlete category is OutStanding. 
+
+Condition:  
+
+If the athleteScore does not belong to any of the above-mentioned range, then return "".
+
+Both the scores mentioned in the above ranges are inclusive.
+
+If the stateName is not Florida return "".
+
+Category is case-insensitive.
+The main method in the UserInterface class is excluded from the evaluation. You are free to write your own code in the main method to invoke the business methods to check its correctness. 
+
+
+Note: 
+
+In the Sample Input / Output provided, the highlighted text in bold corresponds to the input given by the user and the rest of the text represents the output. 
+
+Ensure to follow the object-oriented specifications provided in the question. 
+
+Ensure to provide the names for classes, attributes, and methods as specified in the question. 
+
+Adhere to the code template, if provided. 
+
+ 
+
+Sample Input / Output 1: 
+
+Enter Athlete Details 
+
+ATH4376:Roy:12/03/2001:Florida:72 
+
+Athlete Id : ATH4376 
+
+Athlete Name : Roy 
+
+Dob : 12/03/2001 
+
+State Name : Florida
+
+Athlete Score : 72 
+
+Athlete Category is Good 
+
+ 
+
+Sample Input / Output 2: 
+
+Enter Athlete Details 
+
+ATH7121:Richard:06/09/2002:Florida:200 
+
+Invalid Athlete Details 
+
+
+
+
+ 
+
+Sample Input / Output 3: 
+
+Enter Athlete Details 
+
+ATH7121:Richard:06/09/2002:Ohio:45
+
+Invalid Athlete Details 
